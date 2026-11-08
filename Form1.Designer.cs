@@ -28,12 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            tabControlPrincipal = new TabControl();
+            tabCategorias = new TabPage();
+            tabProductos = new TabPage();
+            tabControlPrincipal.SuspendLayout();
+            SuspendLayout();
+            // 
+            // tabControlPrincipal
+            // 
+            tabControlPrincipal.Controls.Add(tabCategorias);
+            tabControlPrincipal.Controls.Add(tabProductos);
+            tabControlPrincipal.Location = new Point(20, 20);
+            tabControlPrincipal.Name = "tabControlPrincipal";
+            tabControlPrincipal.SelectedIndex = 0;
+            tabControlPrincipal.Size = new Size(200, 100);
+            tabControlPrincipal.TabIndex = 0;
+            // 
+            // tabCategorias
+            // 
+            tabCategorias.Location = new Point(4, 24);
+            tabCategorias.Name = "tabCategorias";
+            tabCategorias.Padding = new Padding(3);
+            tabCategorias.Size = new Size(192, 72);
+            tabCategorias.TabIndex = 0;
+            tabCategorias.Text = "Categorías";
+            tabCategorias.UseVisualStyleBackColor = true;
+            // 
+            // tabProductos
+            // 
+            tabProductos.Location = new Point(4, 24);
+            tabProductos.Name = "tabProductos";
+            tabProductos.Padding = new Padding(3);
+            tabProductos.Size = new Size(192, 72);
+            tabProductos.TabIndex = 1;
+            tabProductos.Text = "Productos";
+            tabProductos.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Controls.Add(tabControlPrincipal);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sistema de Gestión de Productos";
+            tabControlPrincipal.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private TabControl tabControlPrincipal;
+        private TabPage tabCategorias;
+        private TabPage tabProductos;
     }
 }
