@@ -170,13 +170,13 @@
             dgvCategorias.AllowUserToResizeRows = false;
             dgvCategorias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCategorias.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCategorias.Location = new Point(557, 34);
+            dgvCategorias.Location = new Point(418, 34);
             dgvCategorias.MultiSelect = false;
             dgvCategorias.Name = "dgvCategorias";
             dgvCategorias.ReadOnly = true;
             dgvCategorias.RowHeadersVisible = false;
             dgvCategorias.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvCategorias.Size = new Size(240, 150);
+            dgvCategorias.Size = new Size(379, 216);
             dgvCategorias.TabIndex = 10;
             dgvCategorias.CellClick += dgvCategorias_CellClick;
             // 
